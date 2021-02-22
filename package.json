@@ -1,12 +1,13 @@
 {
-  "name": "toolkit",
+  "name": "@xbeat/toolkit",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "yarn lint",
+    "prebuild": "yarn lint && rimraf dist xbeat-toolkit-*",
     "build": "tsc",
+    "prepack": "yarn build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
