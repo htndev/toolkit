@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "yarn lint && rimraf dist xbeat-toolkit-*",
+    "prebuild": "npm run lint && rimraf dist xbeat-toolkit-*",
     "build": "tsc",
-    "prepack": "yarn build",
+    "prepack": "npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -44,7 +44,6 @@
   "lint-staged": {
     "*.{js,ts}": [
       "npm run lint"
-    ],
-    "*.js": "eslint --cache --fix"
+    ]
   }
 }
