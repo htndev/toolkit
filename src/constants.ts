@@ -14,3 +14,8 @@ export const FIELD_LENGTH = {
     MAX: 255
   }
 };
+
+export enum NodeEnvironment {
+  PRODUCTION = 'production',
+  DEVELOPMENT = 'development'
+}
