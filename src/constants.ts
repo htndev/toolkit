@@ -1,6 +1,9 @@
+import { Maybe } from './types';
 export const PROJECT_TITLE = 'xBeat';
 
-export const FIELD_LENGTH: { [k: string]: { MIN: number; MAX: number } } = {
+type Fields = 'EMAIL' | 'USERNAME' | 'PASSWORD' | 'ARTIST' | 'ALBUM' | 'SONG' | 'PLAYLIST';
+
+export const FIELD_LENGTH: { [k in Fields]: { MIN: number; MAX: number } } = {
   EMAIL: {
     MIN: 6,
     MAX: 255
@@ -15,6 +18,18 @@ export const FIELD_LENGTH: { [k: string]: { MIN: number; MAX: number } } = {
   },
   ARTIST: {
     MIN: 2,
+    MAX: 255
+  },
+  ALBUM: {
+    MIN: 1,
+    MAX: 255
+  },
+  SONG: {
+    MIN: 1,
+    MAX: 255
+  },
+  PLAYLIST: {
+    MIN: 1,
     MAX: 255
   }
 };
