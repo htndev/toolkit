@@ -1,4 +1,3 @@
-import { Maybe } from './types';
 export const PROJECT_TITLE = 'xBeat';
 
 type Fields = 'EMAIL' | 'USERNAME' | 'PASSWORD' | 'ARTIST' | 'ALBUM' | 'SONG' | 'PLAYLIST';
