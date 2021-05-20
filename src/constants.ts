@@ -37,3 +37,8 @@ export enum NodeEnvironment {
   PRODUCTION = 'production',
   DEVELOPMENT = 'development'
 }
+
+export enum PlaylistAvailability {
+  Public,
+  Private
+}
