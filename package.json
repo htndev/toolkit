@@ -2,9 +2,11 @@
   "name": "@xbeat/toolkit",
   "version": "1.0.0",
   "description": "",
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "prebuild": "npm run lint && rimraf dist xbeat-toolkit-*",
     "build": "tsc",
     "prepack": "npm run build",
@@ -17,7 +19,7 @@
     "dist/**/*"
   ],
   "keywords": [],
-  "author": "Alexandr Vanilchuk <htn.developer@gmail.com>",
+  "author": "Alexandr Vanilchuk <he4then.mail@gmail.com>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
